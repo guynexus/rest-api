@@ -1,0 +1,44 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Employee {
+  id         Int       @id @default(autoincrement())
+  first_name String
+  last_name  String
+  profession String
+  code       String
+  color      String
+  city       String
+  branch     String
+  assigned   Boolean
+  createdAt  DateTime? @default(now())
+  updatedAt  DateTime? @default(now())
+  deletedAt  DateTime? @default(now())
+  uuid       String    @default(dbgenerated("uuid_generate_v4()"))
+
+  @@map("employees")
+}
+
+model Customer {
+  id         Int       @id @default(autoincrement())
+  first_name String
+  last_name  String
+  code       String
+  profession String
+  color      String
+  city       String
+  branch     String
+  assigned   Boolean
+  created_at DateTime? @default(now())
+  updated_at DateTime? @default(now())
+  deleted_at DateTime? @default(now())
+  uuid       String    @default(dbgenerated("uuid_generate_v4()"))
+
+  @@map("customers")
+}

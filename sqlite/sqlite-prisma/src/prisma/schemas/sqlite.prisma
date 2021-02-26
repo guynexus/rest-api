@@ -1,0 +1,44 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./sqlite3/company.db"
+}
+
+model Employee {
+  id         Int       @id @default(autoincrement())
+  first_name String
+  last_name  String
+  code       String
+  profession String
+  color      String
+  city       String
+  branch     String
+  assigned   Boolean
+  createdAt  DateTime  @default(now())
+  updatedAt  DateTime  @default(now())
+  deletedAt  DateTime?
+
+  @@index([deletedAt], name: "idx_employees_deletedAt")
+  @@map("employees")
+}
+
+model Customer {
+  id         Int       @id @default(autoincrement())
+  first_name String
+  last_name  String
+  code       String
+  profession String
+  color      String
+  city       String
+  branch     String
+  assigned   Boolean
+  createdAt  DateTime  @default(now())
+  updatedAt  DateTime  @default(now())
+  deletedAt  DateTime?
+
+  @@index([deletedAt], name: "idx_customers_deletedAt")
+  @@map("customers")
+}

@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5b42f471.chunk.css",
+    "main.js": "/static/js/main.a9ab24db.chunk.js",
+    "main.js.map": "/static/js/main.a9ab24db.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.7ae25db4.js",
+    "runtime-main.js.map": "/static/js/runtime-main.7ae25db4.js.map",
+    "static/js/2.6c30dde9.chunk.js": "/static/js/2.6c30dde9.chunk.js",
+    "static/js/2.6c30dde9.chunk.js.map": "/static/js/2.6c30dde9.chunk.js.map",
+    "static/js/3.fbece568.chunk.js": "/static/js/3.fbece568.chunk.js",
+    "static/js/3.fbece568.chunk.js.map": "/static/js/3.fbece568.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.5b42f471.chunk.css.map": "/static/css/main.5b42f471.chunk.css.map",
+    "static/js/2.6c30dde9.chunk.js.LICENSE.txt": "/static/js/2.6c30dde9.chunk.js.LICENSE.txt",
+    "static/media/express-dark.bd60c4de.png": "/static/media/express-dark.bd60c4de.png",
+    "static/media/nodejs-icon-1.902e2303.png": "/static/media/nodejs-icon-1.902e2303.png",
+    "static/media/react-table.f32934a0.svg": "/static/media/react-table.f32934a0.svg",
+    "static/media/sqlite.84de32c4.svg": "/static/media/sqlite.84de32c4.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7ae25db4.js",
+    "static/js/2.6c30dde9.chunk.js",
+    "static/css/main.5b42f471.chunk.css",
+    "static/js/main.a9ab24db.chunk.js"
+  ]
+}
